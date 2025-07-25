@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlotas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylescont.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/vermas.css">
+</head>
+<body>
+
+    <button class="menu-toggle" id="menu-toggle"><i class="bi bi-list"></i></button>
+    
+    
+                <aside class="menu" id="menu">
+                    <ul>
+                        <li><a href="pruebas.html" target="_blank">Nosotros</a></li>
+                        <li><a  onclick="focusSection('hero')">Inicio</a></li>
+                        <li><a  onclick="focusSection('carlota-section')">Sabores</a></li>
+                        <li><a  onclick="focusSection('new-arrivals')">Productos</a></li>
+                    </ul>
+                </aside>
+
+    <header>
+        <nav>
+            <img  class="logo" src="img/logo.png" alt="">
+        </nav>
+
+        <div class="hero">
+            <video autoplay muted loop playsinline>
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+    <div class="carlota-section limon">
+        <img src="img/limon.webp" alt="Carlota" class="carlota-image">
+
+        <div class="carlota-text">
+            <h1>Carlotas<br>Limon Refrescante<br>Purebalas</h1>
+            <p>
+                las mejores carlos que vas a probar Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officiis!
+            </p>
+            <div class="buttons">
+                <button class="btn learn" data-sabor="limon">Ver mas</button>
+                <button class="btn order limon">Ordena ya</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="carlota-section fresa">
+
+        <div class="carlota-text">
+            <h1>Carlotas<br>Fresa Frutal<br>Proximamente...</h1>
+            <p>
+                las mejores carlos que vas a probar Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officiis!
+            </p>
+            <div class="buttons">
+                <button class="btn learn" data-sabor="fresa">Ver mas</button>
+                <!-- <button class="btn order fresa">Ordena ya</button> -->
+            </div>
+        </div>
+
+        <img src="img/fresa.webp" alt="Carlota" class="carlota-image">
+    </div>
+
+
+    <div class="carlota-section cafe">
+
+        <img src="img/cafe.png" alt="Carlota" class="carlota-image">
+
+        <div class="carlota-text">
+            <h1>Carlotas<br>Café de Grano<br>Purebalas</h1>
+            <p>
+                las mejores carlos que vas a probar Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, officiis!
+            </p>
+            <div class="buttons">
+                <button class="btn learn" data-sabor="cafe">Ver mas</button>
+                <button class="btn order cafe">Ordena ya</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="new-arrivals" id="new-arrivals">
+        <h2>
+            Descubre el sabor que conquista.
+        </h2>
+        <div class="img">
+        <img class="imgproducto" src="img/bueno.png">
+        </div>
+        <!-- <div class="products">
+            <div class="product">
+                <img src="img/1.png" alt="Brown Long Blouse">
+                <p>Chico</p>
+                <span>$15</span>
+            </div>
+            <div class="product">
+                <img src="img/2.png" alt="Grey Check Long Coat">
+                <p>Mediano</p>
+                <span>$20</span>
+            </div>
+            <div class="product">
+                <img src="img/3.png" alt="White Casual Suit">
+                <p>Grande</p>
+                <span>$25</span>
+            </div> 
+        </div> -->
+    </section>
+
+    <section class="twice-as-cozy">
+        <div class="cozy-content">
+            <div class="cozy-text">
+                <h3>El doble de sabor</h3>
+                <p>DESCUBRE NUESTROS NUEVOS SABORES Y TAMAÑOS</p>
+            </div>
+        </div>
+    </section> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Nuestra Historia</p>
+                <p>Nuestro Espíritu</p>
+                <p>Nuestro Equipo</p>
+            </div>
+            <div class="footer-section">
+                <h4>Servicio al Cliente</h4>
+                <p>Contáctanos</p>
+                <p>Opciones de Entrega</p>
+                <p>Métodos de Pago</p>
+            </div>
+            <div class="footer-section">
+                <h4>Llámanos</h4>
+                <p>Tel / 02-1234-5678</p>
+                <p>Horario / 8:00 AM - 10:00 PM</p>
+                <p>contacto@ecarlotaslimon.com</p>
+            </div>
+        </div>
+        <p class="footer-bottom">Política de Privacidad | Términos y Condiciones | 2025 © Carlotas Limon </p>
+    </footer>
+
+
+
+
+    <!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2>Ingredientes</h2>
+        <ul id="ingredients-list">
+            <li>Leche condensada</li>
+            <li>Galletas Marías</li>
+            <li>Jugo de limón natural</li>
+            <li>Crema para batir</li>
+        </ul>
+    </div>
+</div>
+
+    
+    <script src="js/main.js"></script>
+    <script src="js/vermas.js"></script>
+</body>
+</html>

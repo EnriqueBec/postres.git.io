@@ -1,0 +1,52 @@
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;  
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.658);
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 60px; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    background-color: rgb(155, 255, 193);
+    border-radius: 20px;
+}
+
+.menu.active {
+    left: 0;
+}
