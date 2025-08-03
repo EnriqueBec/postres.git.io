@@ -8,7 +8,7 @@ const ingredientesPorSabor = {
         'Leche condensada',
         'Galletas Marías',
         'Jugo de limón natural',
-        'Lecherar'
+        'Lechera'
     ],
     fresa: [
         'Leche condensada',
@@ -55,3 +55,4 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
