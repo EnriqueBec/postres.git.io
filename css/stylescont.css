@@ -1,0 +1,178 @@
+
+.carlota-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin: 10px 50px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.carlota-section.limon:hover {
+  background-color: #4ab122;
+  color: white;
+}
+
+/* Limon */
+.carlota-section.limon:hover h1,
+.carlota-section.limon:hover p,
+.carlota-section.limon:hover .btn.learn {
+  color: white;
+}
+
+.carlota-section.limon:hover .btn.learn {
+  border-color: white;
+}
+
+.carlota-section.limon:hover .btn.order {
+  background-color: white;
+  color: #65be41;
+}
+
+/* Fresa */
+.carlota-section.fresa:hover {
+  background-color: #d83131;
+  color: white;
+}
+
+/* Fresa */
+.carlota-section.fresa:hover h1,
+.carlota-section.fresa:hover p,
+.carlota-section.fresa:hover .btn.learn {
+  color: white;
+}
+
+.carlota-section.fresa:hover .btn.learn {
+  border-color: white;
+}
+
+.carlota-section.fresa:hover .btn.order {
+  background-color: white;
+  color: #e64545;
+}
+
+
+/* cafe */
+.carlota-section.cafe:hover {
+  background-color: #553e12;
+  color: white;
+}
+
+.carlota-section.cafe:hover h1,
+.carlota-section.cafe:hover p,
+.carlota-section.cafe:hover .btn.learn {
+  color: white;
+}
+
+.carlota-section.cafe:hover .btn.learn {
+  border-color: white;
+}
+
+.carlota-section.cafe:hover .btn.order {
+  background-color: white;
+  color: #553e12;
+}
+.carlota-image {
+  max-width: 400px;
+  height: auto;
+  margin-right: 40px;
+  transition: transform 0.4s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.carlota-text h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.carlota-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #3a3939;
+  transition: color 0.3s;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.btn.learn {
+  background-color: transparent;
+  color: rgb(39, 38, 38);
+  border: 2px solid rgb(155, 142, 142);
+}
+
+.btn.order.limon {
+  text-decoration: none;
+  background-color: rgb(46, 145, 16);
+  color: #ffffff;
+}
+
+.btn.order.fresa {
+  background-color:#e64545;
+  color: #ffffff;
+}
+
+.btn.order.cafe {
+  background-color:#553e12;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+
+  .carlota-section {
+    margin: 10px 10px;
+    padding: 0px;
+  }
+
+  .carlota-image {
+    max-width: 120px;
+    margin-right: 15px;
+  }
+
+  .carlota-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .carlota-text p {
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+    max-width: 200px;
+  }
+}

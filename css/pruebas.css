@@ -1,0 +1,15 @@
+.imagen3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem; /* opcional: espacio entre imágenes */
+  max-width: 100%;
+  box-sizing: border-box;
+  align-items: center; /* centra verticalmente si las imágenes tienen alturas distintas */
+}
+
+.l1, .l2, .f {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* o cover si quieres recorte elegante */
+  display: block;
+}
